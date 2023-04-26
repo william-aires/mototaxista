@@ -16,9 +16,9 @@ public class Corrida {
 
 	}
 
-	public Corrida(long id, Requerente requerente, MotoTaxista motoTaxista, float nota, String localDaPartida,
+	public Corrida(Requerente requerente, MotoTaxista motoTaxista, float nota, String localDaPartida,
 			String localDoDestino, float distancia, Date data) {
-		this.id = id;
+		this.id = System.currentTimeMillis();
 		this.requerente = requerente;
 		this.motoTaxista = motoTaxista;
 		this.nota = nota;
