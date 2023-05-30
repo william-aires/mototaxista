@@ -15,6 +15,7 @@ public class TelaLoginAdmin extends Tela implements ActionListener {
 	private JTextField tfNome;
 	private JTextField tfEmail;
 	private JPasswordField tfSenha;
+	private JButton btCadastrar;
 
 	public TelaLoginAdmin() {
 		setTitle("Login do administrador");
@@ -64,7 +65,7 @@ public class TelaLoginAdmin extends Tela implements ActionListener {
 	}
 
 	public void addButton() {
-		JButton btCadastrar = new JButton();
+		btCadastrar = new JButton();
 		btCadastrar.setText("Cadastrar admin");
 		btCadastrar.setBounds(135, 220, 130, 20);
 		getBackgroundImg().add(btCadastrar);
@@ -76,7 +77,40 @@ public class TelaLoginAdmin extends Tela implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		new TelaLoginUsuario();
 
+	}
+
+	public JTextField getTfNome() {
+		return tfNome;
+	}
+
+	public void setTfNome(JTextField tfNome) {
+		this.tfNome = tfNome;
+	}
+
+	public JTextField getTfEmail() {
+		return tfEmail;
+	}
+
+	public void setTfEmail(JTextField tfEmail) {
+		this.tfEmail = tfEmail;
+	}
+
+	public JPasswordField getTfSenha() {
+		return tfSenha;
+	}
+
+	public void setTfSenha(JPasswordField tfSenha) {
+		this.tfSenha = tfSenha;
+	}
+
+	public JButton getBtCadastrar() {
+		return btCadastrar;
+	}
+
+	public void setBtCadastrar(JButton btCadastrar) {
+		this.btCadastrar = btCadastrar;
 	}
 
 	public static void main(String[] args) {
